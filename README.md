@@ -1,1 +1,15 @@
+To run this application we need  
+1. python 2.7  
+2. pip  
+3. flask  
 
+**Python 2.7**  
+Install python 2.7 from https://www.python.org/downloads/  
+
+**Pip**  
+Copy paste this https://bootstrap.pypa.io/get-pip.py into a file and name it as `get-pip.py` and run the command via terminal/cmd `python get-pip.py`. This will install pip on your local machine.  
+
+**Flask**  
+To install flask type `pip install flask`  
+
+To run the code, navigate to the root folder and type `python app.py` and open browser and navigate to http://127.0.0.1:5000/
