@@ -1,3 +1,6 @@
+<h3>Example Based Machine Translation using Fuzzy Logic</h3>
+
+    
 To run this application we need  
 1. python 2.7  
 2. pip  
