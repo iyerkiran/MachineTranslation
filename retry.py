@@ -1,16 +1,9 @@
-############################################
-# The following peice of code is shamelessly yanked from 
-# http://www.saltycrane.com/blog/2009/11/trying-out-retry-decorator-python/
-# Retry decorator with exponential backoff
 import time
 from functools import wraps
 
 
 def retry(ExceptionToCheck, tries=4, delay=3, backoff=2, logger=None):
     """Retry calling the decorated function using an exponential backoff.
-
-    http://www.saltycrane.com/blog/2009/11/trying-out-retry-decorator-python/
-    original from: http://wiki.python.org/moin/PythonDecoratorLibrary#Retry
 
     :param ExceptionToCheck: the exception to check. may be a tuple of
         exceptions to check
@@ -47,6 +40,3 @@ def retry(ExceptionToCheck, tries=4, delay=3, backoff=2, logger=None):
         return f_retry  # true decorator
 
     return deco_retry
-#####################################################
-# Yanked code ends.
-#####################################################

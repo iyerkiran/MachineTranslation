@@ -1,4 +1,7 @@
-Data_set = [
+# coding=utf-8
+
+#this is the training data set containing gramatically correct sentences in hindi for the corresponding engish sentences.
+data_set = [
 ("Help!","बचाओ!"),
 ("Hello!","नमस्ते।"),
 ("I'm OK","मैं ठीक हूँ।"),
