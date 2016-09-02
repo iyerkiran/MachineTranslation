@@ -7,6 +7,7 @@ import support_library
 from flask import Flask, render_template, request, make_response
 #import nltk 
 import langid
+from Data_set import data_set
 app = Flask(__name__)
 
 @app.route('/')
@@ -29,13 +30,15 @@ def hello():
         translated = client.TranslateText(name, 'en', 'hi')
         input_detected = "English"
         output_detected = "Hindi"
+        translated = translated.replace('"',"")
+        data_set.append((name, translated))
     else:
         translated = client.TranslateText(name, 'hi', 'en')
         input_detected = "Hindi"
         output_detected = "English"
-    translated = translated.replace('"',"")
-    print "translated is"
-    print translated
+        translated = translated.replace('"',"")
+        data_set.append((translated, name))
+    print "translated is " + translated
     return render_template('index.html', name=name, translated=translated, input_detected=input_detected,output_detected=output_detected)
 
 
