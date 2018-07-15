@@ -5,7 +5,7 @@ To run this application we need
 1. python 2.7  
 2. pip  
 3. flask  
-4. langId
+4. googletrans
 
 **Python 2.7**  
 Install python 2.7 from https://www.python.org/downloads/  
@@ -16,7 +16,7 @@ Copy paste this https://bootstrap.pypa.io/get-pip.py into a file and name it as 
 **Flask**  
 To install flask type `pip install flask`  
 
-**LangId**  
-To install langId type `pip install langid`
+**Googletrans**  
+To install googletrans type `pip install googletrans`
 
 To run the code, navigate to the root folder and type `python main_app.py` and open browser and navigate to http://127.0.0.1:5000/
